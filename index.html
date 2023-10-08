@@ -67,7 +67,9 @@
       <!--Main section-->
       <section class="head">
         <h1 id="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button class="button-home" type="button">Request our service</button>
+        <button data-modal-open class="button-home" type="button">
+          Request our service
+        </button>
       </section>
       <div class="container main-section">
         <ul class="main-section-list">
@@ -133,6 +135,9 @@
               width="370"
               height="294"
             />
+            <div class="label">
+              <h4 class="label-title">DESKTOP APPS</h4>
+            </div>
           </li>
           <li>
             <img
@@ -142,6 +147,9 @@
               width="370"
               height="294"
             />
+            <div class="label">
+              <h4 class="label-title">MOBILE APPS</h4>
+            </div>
           </li>
           <li>
             <img
@@ -151,6 +159,9 @@
               width="370"
               height="294"
             />
+            <div class="label">
+              <h4 class="label-title">DESIGN SOLUTIONS</h4>
+            </div>
           </li>
         </ul>
       </section>
@@ -456,5 +467,13 @@
         </div>
       </div>
     </footer>
+    <!-- Request our service Modal -->
+    <!-- backdrop-ul ferestrei modale.-->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
