@@ -11,6 +11,7 @@
   --request-hover-color: #188ce8;
   --icon-color: #afb1b8;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --Roboto: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -220,8 +221,6 @@ a.link-navigation.current {
   border-radius: 4px;
 }
 h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 14px;
 }
 .what-we-do,
@@ -393,8 +392,7 @@ h4 {
   --color2: currentColor;
 }
 .first-part-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
 }
 .footer {
   height: 251px;
@@ -443,7 +441,8 @@ h4 {
   display: block;
 }
 .social {
-  padding: 75px 0 96px 70px;
+  margin-top: 72px;
+  margin-left: 70px;
 }
 .social h4 {
   color: var(--white-color);
@@ -474,6 +473,44 @@ h4 {
 }
 .circle-webstudio:focus {
   background-color: var(--hover);
+}
+.subscribe {
+  width: 48.7%;
+  margin: 72px 0 93px 93px;
+}
+.subscribe form {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
+.subscribe h4 {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.subscribe input {
+  width: 62.8%;
+  background-color: var(--background);
+  color: var(--white-color);
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  padding-left: 14px;
+}
+.subscribe input::placeholder {
+  color: #ffffff99;
+}
+.subscribe button {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 4px;
+  padding: 13px 0 13px 43px;
+  margin-left: 2.1%;
+  gap: 12.5%;
+  width: 35%;
+  height: 50px;
+  background-color: var(--hover);
+
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 .portofolio-section {
   padding: 94px 0;
@@ -625,9 +662,12 @@ h4 {
 .modal-content {
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--white-color);
   border-radius: 4px;
   position: relative;
+}
+.modal-content p {
 }
 
 .is-hidden {
