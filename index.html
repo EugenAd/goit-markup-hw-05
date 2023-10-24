@@ -407,6 +407,7 @@
         </ul>
       </section>
     </main>
+    <!-- Footer section -->
     <footer class="footer">
       <div class="container">
         <div class="first-part-footer">
@@ -488,7 +489,77 @@
     <!-- Request our service Modal -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <p>Leave your information and we'll call you back</p>
+        <h3>Leave your information and we'll call you back</h3>
+        <form class="contact-form">
+          <label class="label-contact" for="user_name">Name</label>
+          <div class="input-container">
+            <input
+              class="input-contact"
+              type="text"
+              name="name"
+              id="user_name"
+              required
+            />
+            <svg class="icon-contact">
+              <use href="images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <label class="label-contact" for="phone">Telephone</label>
+          <div class="input-container">
+            <input
+              class="input-contact"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+            <svg class="icon-contact">
+              <use href="images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <label class="label-contact" for="user_email">E-mail</label>
+          <div class="input-container">
+            <input
+              class="input-contact"
+              type="email"
+              name="email"
+              id="user_email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+            <svg class="icon-contact">
+              <use href="images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <label class="label-contact" for="comments_field" name="Comments"
+            >Comments</label
+          >
+          <textarea
+            name="comments"
+            id="comments_field"
+            type="textarea"
+            placeholder="Enter the text"
+          ></textarea>
+          <div class="container-terms">
+            <label class="terms-and-conditions-label">
+              <input
+                class="terms-and-conditions"
+                type="checkbox"
+                name="terms-and-conditions"
+                value="checked"
+                id="terms-and-conditions-chek"
+              />
+              <svg class="icon-chekbox">
+                <use href="images/symbol-defs.svg#icon-chek"></use>
+              </svg>
+              <span
+                >I agree with the letter and accept the
+                <a href="#">Terms and Conditions</a>
+              </span>
+            </label>
+          </div>
+          <button class="send-button" type="submit" value="Submit">Send</button>
+        </form>
         <button class="close-btn" data-modal-close>
           <svg class="icon-btn">
             <use href="images/symbol-defs.svg#icon-close"></use>
